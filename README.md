@@ -7,6 +7,10 @@ A simple React and TypeScript project for viewing and exploring JSON data.
 - View JSON data in a structured format.
 - Explore nested JSON objects and arrays.
 
+## Adapting data
+
+The data variable is stored in `index.tsx`. Replace it there if you'd like.
+
 ## Installation
 1. Clone the repository:
    ```bash
