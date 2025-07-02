@@ -14,12 +14,11 @@ export function getJSONValueByPath(path: string, data: JSONObject): JSONValue {
     if (currentValue === null || currentValue === undefined) {
       return undefined;
     }
+    currentValue = (currentValue as JSONObject)[part];
+  }
 
-    if (typeof currentValue === "object" && !Array.isArray(currentValue)) {
-      currentValue = currentValue[part];
-    } else {
-      return undefined;
-    } 
+  if (typeof currentValue === "boolean") {
+    return JSON.stringify(currentValue);
   }
 
   return currentValue;
