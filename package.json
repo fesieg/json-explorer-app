@@ -1,12 +1,7 @@
 {
-  "name": "react-typescript",
+  "name": "json-explorer",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
-  "keywords": [
-    "typescript",
-    "react",
-    "starter"
-  ],
+  "description": "json explorer typescript react-project",
   "main": "src/index.tsx",
   "dependencies": {
     "react": "17.0.2",
