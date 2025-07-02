@@ -8,15 +8,14 @@ export function getJSONValueByPath(path: string, data: JSONObject): JSONValue {
   // regex to handle both "." and "[n]" (llm generated)
   const parts = path.match(/[^.\[\]]+/g) || [];
 
-  // TODO: fix typing here
-  let currentValue: any = data;
+  let currentValue: JSONValue | JSONObject = data;
 
   for (const part of parts) {
     if (currentValue === null || currentValue === undefined) {
       return undefined;
     }
-
-    currentValue = currentValue[part];
+    
+    currentValue = (currentValue as JSONObject)[part];
   }
 
   if (typeof currentValue === "boolean") {
