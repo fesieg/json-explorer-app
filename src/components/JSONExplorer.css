@@ -1,0 +1,10 @@
+.json-item-key {
+  color: blue;
+}
+
+.json-item-key:hover {
+  text-decoration: underline;
+  color: dodgerblue;
+  border-radius: 4px;
+  cursor: pointer;
+}

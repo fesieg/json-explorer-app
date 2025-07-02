@@ -1,0 +1,10 @@
+.json-area {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 5px;
+}
+
+.app {
+  font-family: consolas;
+}
